@@ -25,9 +25,12 @@
       <div class="main-container">
         <form method="post" enctype="multipart/form-data">
           <fieldset class="event-about">
+
             <legend>
-              <img src="./assets/icons/calendar.svg" alt="">
-              <h2>Sobre o evento</h2>
+              <span aria-hidden="true">
+                <img src="/assets/icons/calendar.svg" alt="">
+              </span>
+              Sobre o evento
             </legend>
 
             <div class="input-wrapper">
@@ -35,51 +38,55 @@
               <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
             </div>
 
-            <div class="flex">
-              <div class="input-wrapper">
-                <div class="input-inner">
-                  <label for="start">Início</label>
-                  <input type="date" lang="pt-br" name="start" id="start">
-                </div>
+            <div class="input-wrapper flex">
+              <div class="input-inner flex-1">
+                <label for="start">Início</label>
+                <input type="datetime-local" lang="pt-br" name="start" id="start">
+              </div>
 
-                <div class="input-inner">
-                  <label for="end">Fim</label>
-                  <input type="date" lang="pt-br" name="end" id="end">
+              <div class="input-inner flex-1">
+                <label for="end">Fim</label>
+                <input type="datetime-local" lang="pt-br" name="end" id="end">
+              </div>
+            </div>
+
+
+            <div class="flex input-wrapper">
+
+              <div class="radio-wrapper flex-1">
+                <label>Tipo</label>
+                <div class="radio-inputs">
+                  <label class="radio">
+                    <input checked="" type="radio" name="event-type">
+                    <span>
+                      <img src="assets/icons/building-checked.svg" alt="">
+                      Presencial
+                    </span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="event-type">
+                    <span>
+                      <img src="assets/icons/building-default.svg" alt="">
+                      Online
+                    </span>
+                  </label>
                 </div>
               </div>
 
-              <div class="input-wrapper">
-                <div class="radio-wrapper">
-                  <label>Tipo</label>
-                  <div class="radio-inner">
-                    <div class="bg-radio-inner">
-                      <img src="assets/icons/building-checked.svg" alt="ícone de um prédio">
-                      <input type="radio" name="event-type" value="present" id="present">
-                      <label for="present">Presencial</label>
-                    </div>
-
-                    <div class="bg-radio-inner">
-                      <img src="assets/icons/video-default.svg" alt="ícone de uma câmera de vídeo">
-                      <input type="radio" name="event-type" value="online" id="online">
-                      <label for="online">Online</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="input-inner">
-                  <label for="locale">Local</label>
-                  <input type="text" name="locale" id="locale" placeholder="Link ou endereço">
-                </div>
+              <div class="input-inner flex-1">
+                <label for="locale">Local</label>
+                <input type="text" name="locale" id="locale" placeholder="Link ou endereço">
               </div>
 
-              <div class="textarea-wrapper">
-                <label for="description">Descrição</label>
-                <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
-              </div>
+            </div>
+
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
           </fieldset>
         </form>
-      </div>
     </main>
   </div>
 </body>
