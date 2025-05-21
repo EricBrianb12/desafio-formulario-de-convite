@@ -1,3 +1,4 @@
+/* toggle button */
 .radio-inputs {
   position: relative;
   display: flex;
@@ -30,8 +31,6 @@
   }
 }
 
-
-
 .radio-inputs input:checked~span {
   margin: 4px;
   padding: 0.656rem 1.125rem;
@@ -43,5 +42,6 @@
   & svg path {
     fill: var(--brand-light);
   }
-
 }
+
+/* Custom Color */

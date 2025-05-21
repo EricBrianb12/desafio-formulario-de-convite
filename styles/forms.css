@@ -3,6 +3,7 @@
 fieldset {
   border: none;
   display: grid;
+  margin-bottom: 3rem;
 }
 
 legend {
@@ -10,8 +11,9 @@ legend {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
-}
 
-fieldset+fieldset {
-  margin-bottom: 3rem;
+  & span {
+    width: 24px;
+    height: 24px;
+  }
 }
