@@ -35,7 +35,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+legend {
   font: 700 1.125rem/1.5 "Baloo 2", sans-serif;
   color: var(--text-heading);
 }
@@ -48,4 +49,17 @@ h1 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }

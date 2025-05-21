@@ -20,6 +20,23 @@ main {
   background-color: var(--shape-body);
   border-radius: 0.75rem;
 
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--shape-body);
+    border-radius: 50%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--shape-background);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+
+  }
+
   & .main-container {
     max-width: 35rem;
   }
