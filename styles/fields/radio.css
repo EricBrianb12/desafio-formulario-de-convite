@@ -30,6 +30,8 @@
   }
 }
 
+
+
 .radio-inputs input:checked~span {
   margin: 4px;
   padding: 0.656rem 1.125rem;
@@ -37,11 +39,9 @@
   border-radius: 4px;
   font-weight: 600;
   color: #fff;
-}
 
+  & svg path {
+    fill: var(--brand-light);
+  }
 
-
-
-.radio-inputs input:checked~.radio {
-  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
