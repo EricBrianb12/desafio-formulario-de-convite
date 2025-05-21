@@ -8,7 +8,6 @@
   /* fontes corpo de texto*/
   --font-family: "Open Sans", sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
-  --title: 700 1.125rem/1.5 "Baloo 2", sans-serif;
   --text-sm: 400 .875rem/1.4 var(--font-family);
   --text-xs: 400 .75rem/1.4 var(--font-family);
 
@@ -37,8 +36,14 @@ body {
 
 h1,
 h2 {
+  font: 700 1.125rem/1.5 "Baloo 2", sans-serif;
   color: var(--text-heading);
 }
+
+h1 {
+  font-size: 1.75rem;
+}
+
 
 img {
   max-width: 100%;

@@ -18,65 +18,68 @@
       <img src="/assets/logosvg.svg" alt="Logo do formulário de convite">
       <p>Crie um convite digital para o seu evento</p>
     </aside>
-    <main class="main-container">
+
+    <main>
       <h1>Crie o seu convite</h1>
 
-      <form method="post" enctype="multipart/form-data">
-        <fieldset class="event-about">
-          <legend>
-            <img src="./assets/icons/calendar.svg" alt="">
-            <h2>Sobre o evento</h2>
-          </legend>
+      <div class="main-container">
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="event-about">
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="">
+              <h2>Sobre o evento</h2>
+            </legend>
 
-          <div class="input-wrapper">
-            <label for="event-name">Título</label>
-            <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
-          </div>
-
-          <div class="flex">
             <div class="input-wrapper">
-              <div class="input-inner">
-                <label for="start">Início</label>
-                <input type="date" lang="pt-br" name="start" id="start">
-              </div>
-
-              <div class="input-inner">
-                <label for="end">Fim</label>
-                <input type="date" lang="pt-br" name="end" id="end">
-              </div>
+              <label for="event-name">Título</label>
+              <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
             </div>
 
-            <div class="input-wrapper">
-              <div class="radio-wrapper">
-                <label>Tipo</label>
-                <div class="radio-inner">
-                  <div class="bg-radio-inner">
-                    <img src="assets/icons/building-checked.svg" alt="ícone de um prédio">
-                    <input type="radio" name="event-type" value="present" id="present">
-                    <label for="present">Presencial</label>
-                  </div>
+            <div class="flex">
+              <div class="input-wrapper">
+                <div class="input-inner">
+                  <label for="start">Início</label>
+                  <input type="date" lang="pt-br" name="start" id="start">
+                </div>
 
-                  <div class="bg-radio-inner">
-                    <img src="assets/icons/video-default.svg" alt="ícone de uma câmera de vídeo">
-                    <input type="radio" name="event-type" value="online" id="online">
-                    <label for="online">Online</label>
-                  </div>
+                <div class="input-inner">
+                  <label for="end">Fim</label>
+                  <input type="date" lang="pt-br" name="end" id="end">
                 </div>
               </div>
 
-              <div class="input-inner">
-                <label for="locale">Local</label>
-                <input type="text" name="locale" id="locale" placeholder="Link ou endereço">
+              <div class="input-wrapper">
+                <div class="radio-wrapper">
+                  <label>Tipo</label>
+                  <div class="radio-inner">
+                    <div class="bg-radio-inner">
+                      <img src="assets/icons/building-checked.svg" alt="ícone de um prédio">
+                      <input type="radio" name="event-type" value="present" id="present">
+                      <label for="present">Presencial</label>
+                    </div>
+
+                    <div class="bg-radio-inner">
+                      <img src="assets/icons/video-default.svg" alt="ícone de uma câmera de vídeo">
+                      <input type="radio" name="event-type" value="online" id="online">
+                      <label for="online">Online</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-inner">
+                  <label for="locale">Local</label>
+                  <input type="text" name="locale" id="locale" placeholder="Link ou endereço">
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </div>
-
-            <div class="textarea-wrapper">
-              <label for="description">Descrição</label>
-              <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
-            </div>
-          </div>
-        </fieldset>
-      </form>
+          </fieldset>
+        </form>
+      </div>
     </main>
   </div>
 </body>
