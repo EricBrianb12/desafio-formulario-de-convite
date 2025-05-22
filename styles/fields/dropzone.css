@@ -4,11 +4,11 @@
 
   & label {
     background-color: var(--shape-button);
-    padding: 10.5px 12px;
-    border-radius: 4px;
+    padding: 0.656rem .75rem;
+    border-radius: 0.25rem;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     cursor: pointer;
     margin-bottom: 0;
 
@@ -21,6 +21,10 @@
 }
 
 #file-name {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   color: var(--input-placeholder);
+}
+
+.check {
+  margin-top: 1rem;
 }

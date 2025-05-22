@@ -1,13 +1,13 @@
 .radio-wrapper-theme {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
   gap: 8px;
 }
 
 .radio-inner {
   background-color: var(--shape-button);
-  padding: 4px;
-  border-radius: 8px;
+  padding: 0.25rem;
+  border-radius: .5rem;
   display: grid;
   justify-items: center;
   cursor: pointer;

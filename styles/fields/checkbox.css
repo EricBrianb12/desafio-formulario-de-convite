@@ -1,13 +1,13 @@
 .checkbox-wrapper {
   border-top: 1px solid var(--input-stroke);
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 
 .checkbox-inner {
   display: flex;
   position: relative;
-  gap: 12px;
+  gap: 0.75rem;
   cursor: pointer;
 
   & input[type="checkbox"] {
@@ -29,7 +29,7 @@
 }
 
 .checkbox-image {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background-image: url(../../assets/icons/checkbox-default.svg);
 }
