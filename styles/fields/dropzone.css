@@ -1,0 +1,26 @@
+.file-upload {
+  display: flex;
+  align-items: center;
+
+  & label {
+    background-color: var(--shape-button);
+    padding: 10.5px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+  }
+
+
+}
+
+#file-name {
+  margin-left: 10px;
+  color: var(--input-placeholder);
+}

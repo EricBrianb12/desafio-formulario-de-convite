@@ -221,7 +221,78 @@
                 </div>
               </div>
             </div>
+
+            <div class="toggledrop-wrapper flex">
+              <div class="input-inner flex-1">
+                <label>Estilo</label>
+
+                <div class="check">
+                  <input id="check" type="checkbox">
+                  <label for="check"></label>
+                </div>
+              </div>
+
+              <div class="input-inner flex-2">
+                <label>Foto de capa</label>
+
+                <div class="file-upload">
+                  <input type="file" id="file" hidden>
+                  <label for="file">
+                    <img src="/assets/icons/upload.svg" alt="">
+                    Selecionar
+                  </label>
+                  <span id="file-name">Nenhum arquivo selecionado</span>
+                </div>
+              </div>
+            </div>
           </fieldset>
+
+          <fieldset class="contact">
+            <legend>
+              <span aria-hidden="true">
+                <img src="/assets/icons/contact.svg" alt="">
+              </span>
+              Dados para contato
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Nome completo" required>
+            </div>
+
+            <div class="input-wrapper flex">
+              <div class="input-inner flex-1">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Exemplo@email.com">
+              </div>
+
+              <div class="input-inner flex-1">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="checkbox-wrapper">
+            <div class="checkbox-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+            </div>
+
+            <div class="checkbox-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="att-email" id="att-email">
+              <label for="att-email">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+
+            <div class="checkbox-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="att-sms" id="att-sms">
+              <label for="att-sms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
+          </div>
+
         </form>
     </main>
   </div>

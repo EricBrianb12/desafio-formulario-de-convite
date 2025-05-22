@@ -49,3 +49,7 @@ label {
 .input-wrapper {
   margin-bottom: 1rem;
 }
+
+.contact .input-wrapper .input-inner {
+  margin-top: 1rem;
+}

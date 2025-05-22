@@ -65,5 +65,9 @@ img {
 }
 
 .label-title {
-  margin-bottom: inherit;
+  margin-bottom: 16px;
+}
+
+.customization .input-wrapper {
+  margin-bottom: 28px;
 }
