@@ -1,0 +1,42 @@
+.radio-wrapper-theme {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+  gap: 8px;
+}
+
+.radio-inner {
+  background-color: var(--shape-button);
+  padding: 4px;
+  border-radius: 8px;
+  display: grid;
+  justify-items: center;
+  cursor: pointer;
+  position: relative;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    appearance: none;
+    inset: 0;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & label {
+    margin: 8px 0;
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
+  &:focus-within,
+  &:has(:checked) {
+    outline: 2px solid var(--brand-light);
+    background-color: var(--shape-button);
+  }
+}
