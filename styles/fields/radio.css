@@ -1,4 +1,3 @@
-/* toggle button */
 .radio-inputs {
   position: relative;
   display: flex;
@@ -43,5 +42,3 @@
     fill: var(--brand-light);
   }
 }
-
-/* Custom Color */

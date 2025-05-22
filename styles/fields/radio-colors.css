@@ -1,0 +1,89 @@
+.radio-group {
+  display: grid;
+  justify-items: left;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 12px;
+}
+
+input[type="radio"] {
+  all: unset;
+  appearance: none;
+  display: none;
+}
+
+.radio-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--shape-button);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.radio-item::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked+.radio-item {
+  background-color: var(--brand-light);
+}
+
+input[type="radio"]:checked+.radio-item::before {
+  outline: 3px solid var(--shape-button);
+}
+
+.radio-item:hover {
+  background-color: var(--shape-hover);
+}
+
+
+/* cores dos radios */
+.radio-item.brand-light::before {
+  background-color: var(--brand-light);
+}
+
+.radio-item.navy::before {
+  background-color: #6A59FF;
+}
+
+.radio-item.purple::before {
+  background-color: #B259FF;
+}
+
+.radio-item.fuschia::before {
+  background-color: #FF59F9;
+}
+
+.radio-item.pink::before {
+  background-color: #FF598B;
+}
+
+.radio-item.danger::before {
+  background-color: #FF5959;
+}
+
+.radio-item.orange::before {
+  background-color: #FF8B59;
+}
+
+.radio-item.yellow::before {
+  background-color: #FFCD59;
+}
+
+.radio-item.lime::before {
+  background-color: #E1FF59;
+}
+
+.radio-item.green::before {
+  background-color: #59FF91;
+}
+
+.radio-item.cyan::before {
+  background-color: #59FFF9;
+}
